@@ -3,8 +3,8 @@ const serverUrl = {
     // uploadUrl: 'http://192.168.1.9:5501/' // Uploads folder URL
 
 
-    apiUrl: 'https://klcmart.in:5501/', // API base URL
-    uploadUrl: 'https://klcmart.in:5501/uploads' // Uploads folder URL
+    apiUrl: 'https://klcmart.in:5000/', // API base URL
+    uploadUrl: 'https://klcmart.in:5000/uploads' // Uploads folder URL
 
 
     
