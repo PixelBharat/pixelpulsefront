@@ -1,0 +1,21 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Thunder" clip-path="url(#clip0_1460_8819)">
+<g id="Clip path group">
+<mask id="mask0_1460_8819" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+<g id="a">
+<path id="Vector" d="M24 0H0V24H24V0Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0_1460_8819)">
+<g id="Group">
+<path id="Vector_2" d="M13.9119 0.75H10.2489C9.73144 0.75 9.14607 1.13625 8.94207 1.61175L4.31869 12.3998C4.01757 13.1021 4.39369 13.6725 5.15757 13.6725H11.6188C12.3831 13.6725 12.8072 14.2609 12.5657 14.9858L10.2444 21.9495C9.72957 23.4945 10.1046 23.691 11.0818 22.3882L19.5568 11.088C20.0154 10.4768 19.7672 9.98025 19.0033 9.98025H12.5421C11.7778 9.98025 11.3878 9.40425 11.6717 8.69475L14.5014 1.62038C14.6934 1.14 14.4294 0.75 13.9119 0.75Z" fill="#374557"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_1460_8819">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>

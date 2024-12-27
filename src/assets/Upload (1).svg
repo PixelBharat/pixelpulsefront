@@ -1,0 +1,14 @@
+<svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Upload" clip-path="url(#clip0_518_2885)">
+<g id="Group">
+<path id="Vector" d="M16 14.5L12 10.5M12 10.5L8 14.5M12 10.5V19.5" stroke="#666666" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M20.39 16.89C21.3653 16.3583 22.1358 15.5169 22.5798 14.4986C23.0239 13.4804 23.1162 12.3432 22.8422 11.2667C22.5682 10.1901 21.9434 9.2355 21.0666 8.55343C20.1898 7.87137 19.1108 7.50072 18 7.49998H16.74C16.4373 6.32923 15.8731 5.24232 15.0899 4.32098C14.3067 3.39964 13.3248 2.66783 12.2181 2.18059C11.1113 1.69335 9.90851 1.46334 8.70008 1.50787C7.49164 1.55239 6.30903 1.87028 5.24114 2.43765C4.17325 3.00501 3.24787 3.80709 2.53458 4.78357C1.82129 5.76004 1.33865 6.88552 1.12294 8.07538C0.90723 9.26524 0.964065 10.4885 1.28917 11.6532C1.61428 12.818 2.1992 13.8939 2.99996 14.8" stroke="#666666" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M16 14.5L12 10.5L8 14.5" stroke="#666666" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_518_2885">
+<rect width="24" height="20" fill="white" transform="translate(0 0.5)"/>
+</clipPath>
+</defs>
+</svg>

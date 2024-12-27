@@ -1,0 +1,355 @@
+.attendanceStat {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+.attendanceStats-cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.attendanceStats-card {
+    display: flex;
+    min-width: 497px;
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1 0 0;
+    border-radius: 16px;
+    border: 1px solid var(--Gray-300, #DEE2E6);
+    background: var(--Default-White, #FFF);
+    flex: 1 1 calc(50% - 20px);
+    /* Adjusted for gap */
+}
+
+.attendanceStats-card-upperContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--Gray-200, #E9ECEF);
+}
+
+.attendanceStats-card-upperContent-left {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.attendanceStats-profile {
+    border-radius: 8px;
+    display: flex;
+    object-fit: cover;
+    max-width: 56px;
+    max-height: 56px;
+}
+
+.attendanceStats-card-upperContent-left-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.attendanceStats-card-name {
+    overflow: hidden;
+    color: var(--text-color, #374557);
+    text-overflow: ellipsis;
+    /* Semi-Bold / H5 Heading */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 0;
+}
+
+.attendanceStats-card-id {
+    color: var(--text-color, #374557);
+    /* Body/ Base text */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    opacity: 0.5;
+    padding: 0;
+}
+
+.attendanceStats-card-name-div {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.attendanceStats-card-name-dot {
+    display: flex;
+width: 12px;
+height: 12px;
+padding: 4px 4px;
+justify-content: center;
+align-items: center;
+border-radius: 34px;
+
+}
+
+.attendanceStats-card-name-dot.present {
+    background: linear-gradient(90deg, #00B9E1 0%, #23CF81 100%);
+}
+
+.attendanceStats-card-name-dot.leave {
+    background: linear-gradient(90deg, #E15F00 0%, #F90 100%);
+}
+
+.attendanceStats-card-lowerContent {
+    display: flex;
+justify-content: center;
+align-items: center;
+align-content: center;
+gap: 20px;
+align-self: stretch;
+flex-wrap: wrap;
+}
+
+.attendanceStats-card-lowerContent-box {
+    display: flex;
+padding: 8px 12px;
+flex-direction: column;
+
+gap: 4px;
+flex: 1 0 0;
+border-radius: 8px;
+background: var(--colors-cyan-cyan-100, #CFF4FC);
+}
+
+.attendanceStats-card-lowerContent-box.forpresent {
+    justify-content: center;
+    align-items: center;
+}
+
+.attendanceStats-card-lowerContent-box-placeHolder {
+    color: var(--text-color, #374557);
+
+/* Body/Small */
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+opacity: 0.5;
+}
+
+.attendanceStats-card-lowerContent-box-details {
+    color: var(--text-color, #374557);
+
+/* Semi-Bold / H6 Heading */
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+opacity: 0.5;
+}
+
+.attendanceStats-button {
+    display: flex;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--blue, #00B9E1);
+    background: linear-gradient(90deg, #00FCB0 50%, #00B9E1 50%);
+    background-size: 200% 100%; /* Double the width to enable animation effect */
+    background-position: 100% 0; /* Start with the gradient at the right */
+    transition: background-position 300ms ease-in-out;
+    color: var(--Default-White, #FFF);
+    
+    /* Semi-Bold / H6 Heading */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.attendanceStats-button:hover {
+    background-position: 0 0; /* Move the gradient to the left on hover */
+}
+
+.attendanceStat-dropdown {
+    display: flex;
+width: 173px;
+padding: 12px 16px;
+justify-content: space-between;
+align-items: center;
+border-radius: 8px;
+border: 1px solid var(--Gray-300, #DEE2E6);
+background: var(--Default-White, #FFF);
+color: var(--text-color, #374557);
+/* Body/ Base text */
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 175% */
+}
+
+.attendanceStat-dropdown-icon {
+    width: 24px;
+height: 24px;
+flex-shrink: 0;
+color: black;
+}
+
+
+
+/* detail attendence */
+
+.detail-attendance-box-placeholder {
+    color: var(--text-color, #374557);
+/* Body/ Base text */
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 175% */
+opacity: 0.5;
+}
+
+.detail-attendance-box-details {
+    color: var(--Gray-900, #212529);
+
+/* Semi-Bold / H3 Heading */
+font-family: Inter;
+font-size: 28px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+opacity: 0.5;
+}
+
+
+.detail-attendance-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.detail-attendance-leftside {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.detail-attendance-rightside {
+    display: flex;
+    min-width: 300px;
+    max-width: 600px;
+    flex-direction: column;
+    flex: 1 0 0;
+    gap: 20px;
+}
+
+.attendanceStats-card-lowerContent-box-sick-leave {
+    color: var(--text-color, #374557);
+/* Body/ Base text */
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 175% */
+opacity: 0.5;
+}
+
+.leave-card-lowerContent-buttons {
+    display: flex;
+align-items: flex-start;
+gap: 20px;
+align-self: stretch;
+}
+
+.leave-button {
+    display: flex;
+padding: 12px 24px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+flex: 1 0 0;
+border-radius: 8px;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.leave-button.deny {
+    border: 1px solid var(--colors-red-red-600, #B02A37);
+background: var(--colors-red-red-500, #DC3545);
+color: white;
+}
+
+.leave-button.approve {
+    border: 1px solid var(--blue, #00B9E1);
+    background: var(--blue, #00B9E1);
+color: white;
+}
+
+.leave-button.view-details {
+    border: 1px solid var(--Cyan-700, #087990);
+    background: var(--Default-White, #FFF);
+color: white;
+color: var(--Cyan-700, var(--colors-cyan-cyan-700, #087990));
+}
+
+.leave-card-lowerContent-heading {
+    color: var(--text-color, #374557);
+/* Semi-Bold / H6 Heading */
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.leave-card-lowerContent-subheading {
+    color: var(--text-color, #374557);
+/* Body/Small */
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.leave-status.approved {
+    border: 1px solid var(--blue, #00B9E1);
+    background: var(--blue, #00B9E1);
+color: white;
+  }
+  
+  .leave-status.rejected {
+    border: 1px solid var(--colors-red-red-600, #B02A37);
+background: var(--colors-red-red-500, #DC3545);
+    color: white;
+  }
+
+  .leave-status {
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+    border-radius: 8px;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }

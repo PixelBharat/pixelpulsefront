@@ -1,0 +1,600 @@
+.employee-page {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.employee-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.employee-card {
+    display: flex;
+    min-width: 511px;
+    max-width: 100%;
+    padding: 16px;
+    align-items: flex-start;
+    flex: 1 1 calc(50% - 20px); /* Adjusted for gap */
+    box-sizing: border-box;
+    border-radius: 16px;
+    border: 1px solid var(--Gray-300, #DEE2E6);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    background: var(--Default-White, #FFF);
+    min-height: 258px;
+}
+
+
+
+.employee-img {
+    width: 200px;
+    border-radius: 8px;
+    display: flex;
+    object-fit: cover;
+    /* Ensures the image takes up full width of the card */
+    height: 100%;
+}
+
+.employee-content {
+    display: flex;
+    padding: 16px 20px;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.employee-card:hover {
+    border-color: #00B9E1;
+    
+}
+
+.employee-uppercontent {
+    display: flex;
+    padding-bottom: 16px;
+    flex-direction: column;
+    gap: 8px;
+    border-bottom: 1px solid var(--Gray-300, #DEE2E6);
+    width: 100%;
+    align-items: flex-start;
+    /* Ensure children are aligned to start */
+}
+
+.employee-designation {
+    display: flex;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: var(--Gradient, linear-gradient(90deg, rgba(0, 185, 225, 0.30) 0%, rgba(0, 252, 176, 0.30) 100%), #FFF);
+    color: var(--text-color, #374557);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-self: flex-start;
+    /* Align this element to the start */
+}
+
+.employee-name {
+    color: var(--text-color, #374557);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.employee-para {
+    overflow: hidden;
+    color: var(--text-color, #374557);
+    text-overflow: ellipsis;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 175% */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    align-self: stretch;
+}
+
+.emp-view-btn{
+    border-radius: 8px;
+border: 1px solid var(--Cyan-700, #087990);
+background: var(--Default-White, #FFF);
+display: flex;
+padding: 12px 24px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+color: var(--Cyan-700, var(--colors-cyan-cyan-700, #087990));
+
+/* Semi-Bold / H6 Heading */
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.viewprofile {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.viewprofile-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.viewprofile-rightside {
+    display: flex;
+    min-width: 300px;
+    max-width: 600px;
+    flex-direction: column;
+    flex: 1 0 0;
+    gap: 20px;
+}
+
+
+.viewprofile-mainHeading {
+    color: var(--text-color, #374557);
+
+    /* Semi-Bold / H5 Heading */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+
+.viewprofile-left-profile-card-uppercontent {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--Gray-300, #DEE2E6);
+}
+
+.viewprofile-left-profile-card {
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 16px;
+    border: 1px solid var(--Gray-300, #DEE2E6);
+    background: var(--Default-White, #FFF);
+    width: 100%;
+}
+
+.viewprofile-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.viewprofile-left-profile-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 20px;
+    flex: 1;
+}
+
+
+.viewprofile-rightside-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid var(--Gray-300, #DEE2E6);
+    background: var(--Default-White, #FFF);
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.00);
+    width: 100%;
+}
+
+
+.viewprofile-rightside-upperpart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.viewprofile-subHeading {
+    display: -webkit-box;
+    overflow: hidden;
+    color: var(--text-color, #374557);
+    text-overflow: ellipsis;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.viewprofile-rightside-status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 12px;
+    border-radius: 4px;
+    color: var(--Default-White, #FFF);
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.viewprofile-rightside-status.completed {
+    background: linear-gradient(90deg, #4FA0FF 0%, rgba(143, 0, 255, 0.60) 100%);
+}
+
+.viewprofile-rightside-status.in-progress {
+    background: linear-gradient(90deg, #00B9E1 0%, #23CF81 100%);
+}
+
+.viewprofile-rightside-status.review {
+    background: linear-gradient(90deg, #FC4C00 0%, #FFB800 100%);
+}
+
+.viewprofile-rightside-task {
+    display: -webkit-box;
+    overflow: hidden;
+    color: var(--text-color, #374557);
+    text-overflow: ellipsis;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    -webkit-box-orient: vertical;
+    align-self: stretch;
+}
+
+.viewprofile-rightside-heading {
+    color: var(--text-color, #374557);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.viewprofile-left-card-reporting {
+    color: var(--text-color, #374557);
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.viewprofile-left-card-reporter-name {
+    color: var(--text-color, #374557);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    opacity: 0.5;
+}
+
+
+.viewprofile-left-profile-card-team {
+    align-self: stretch;
+    color: var(--text-color, #374557);
+
+    /* Body/ Base text */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 175% */
+}
+
+.viewprofile-left-profile-card-reporter {
+    display: flex;
+    padding: 8px 12px;
+    max-width: 126px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 8px;
+    background: var(--colors-cyan-cyan-100, #CFF4FC);
+    height: fit-content;
+}
+
+.viewprofile-left-profile-card-lowercontent {
+    color: var(--text-color, #374557);
+
+    /* Body/ Base text */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 175% */
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+.viewprofile-left-profile-card-img {
+    border-radius: 8px;
+    display: flex;
+    object-fit: cover;
+    width: 200px;
+    /* Ensures the image takes up full width of the card */
+    height: 100%;
+}
+
+
+.viewprofile-left-profile-card-employee-detail {
+    display: flex;
+    gap: 12px;
+    color: var(--text-color, #374557);
+    /* Body/ Base text */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 175% */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    /* Optional: Removes default padding */
+    margin: 0;
+    /* Optional: Removes default margin */
+}
+
+.viewprofile-left-icon-details {
+    display: flex;
+    gap: 12px;
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    /* Aligns the icon vertically in the middle */
+    /* Adjust size as needed */
+}
+
+.text {
+    display: inline-block;
+    vertical-align: middle;
+    /* Aligns the text vertically in the middle */
+    font-size: 16px;
+    /* Adjust font size as needed */
+    margin-left: 2px;
+    /* Space between icon and text */
+}
+
+
+.viewprofile-left-profile-card-uppercontent {
+    display: flex;
+    justify-content: space-between;
+    /* Aligns items to the start (left) */
+    gap: 4px;
+    padding-bottom: 16px;
+    width: 100%;
+    /* Ensures it takes up the full width */
+}
+
+
+.viewprofile-left-profile-card-team {
+    display: block;
+    /* Ensures that text elements are block-level for alignment */
+    color: var(--text-color, #374557);
+    font-family: Inter;
+}
+
+
+.viewprofile-left-profile-card-team {
+    font-size: 16px;
+    /* Body / Base text */
+    font-weight: 400;
+    line-height: 28px;
+    /* 175% */
+}
+
+.viewprofile-left-card-reporting {
+    color: var(--text-color, #374557);
+    /* Body/Small */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.5;
+}
+
+
+.viewprofile-para {
+    color: var(--text-color, #374557);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 175% */
+    text-align: left;
+    /* Ensures text is aligned to the left */
+    margin: 0;
+    /* Removes default margin */
+    padding: 0;
+    /* Removes default padding */
+    float: none;
+    /* Ensures no float property is affecting alignment */
+}
+
+
+
+.viewprofile-left-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--Gray-300, #DEE2E6);
+}
+
+.viewprofile-left-third-content-type1 {
+    color: var(--text-color, #374557);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    opacity: 0.5;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 200px;
+}
+
+.viewprofile-left-third-content {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.viewprofile-left-third-subcontent {
+    display: flex;
+    gap: 12px;
+    flex: 1;
+    /* Ensures it takes up available space */
+    width: 100%;
+    /* Explicit width for better control */
+}
+
+.viewprofile-left-third-right {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+    /* Ensures it takes up available space */
+    width: 50%;
+    /* Explicit width for better control */
+}
+
+.viewprofile-left-third-content-type2 {
+    color: var(--text-color, #374557);
+    font-weight: 400;
+    opacity: 100%;
+}
+
+.viewprofile-left-button {
+    color: var(--text-color, #374557);
+    text-align: center;
+
+    /* Body/ Base text */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 175% */
+    opacity: 0.5;
+    display: flex;
+    min-width: 83px;
+    max-width: 85px;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    flex: 1 0 0;
+    border-radius: 8px;
+    border: 1px solid var(--Gray-300, #DEE2E6);
+    background: var(--Default-White, #FFF);
+}
+
+.viewprofile-left-sections-experiencecard-head {
+    color: var(--text-color, #374557);
+/* Semi-Bold / H6 Heading */
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.viewprofile-left-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-left: 4px ;
+}
+
+.viewprofile-left-button {
+    padding: 8px 50px;
+}
+
+.viewprofile-left-sections-experiencecards {
+    display: flex;
+    gap: 20px;
+}
+
+.viewprofile-left-sections-experiencecard {
+    display: flex;
+    padding: 8px 12px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+    flex: 1 0 0;
+    border-radius: 8px;
+background: var(--colors-cyan-cyan-100, #CFF4FC);
+}
+
+
+
+.viewprofile {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Medium screens (Tablets) */
+@media (max-width: 768px) {
+    .viewprofile {
+        flex-direction: column; /* Change flex direction to column for tablets */
+    }
+
+    .viewprofile-left,
+    .viewprofile-rightside {
+        width: 100%; /* Ensure full width for each section */
+        gap: 10px; /* Adjust gap for smaller screens */
+    }
+}
+
+/* Small screens (Mobile devices) */
+@media (max-width: 480px) {
+    .viewprofile {
+        flex-direction: column; /* Change flex direction to column for mobile devices */
+        gap: 10px; /* Adjust gap for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .viewprofile-left,
+    .viewprofile-rightside {
+        width: 100%; /* Ensure full width for each section */
+        gap: 8px; /* Further adjust gap if needed */
+    }
+}
